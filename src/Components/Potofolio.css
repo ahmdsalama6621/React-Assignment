@@ -1,0 +1,74 @@
+.potofolio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.images div {
+  width: calc(100% / 4);
+  margin: 10px;
+}
+.images img {
+  max-width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  transition: .3s;
+}
+.potofolio h2 {
+  margin-top: 150px;
+}
+.potofolio h2::before {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-126%);
+  width: 12%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+.potofolio h2::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(28%);
+  width: 12%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+@media (max-width:767px) {
+  .potofolio .one {
+  width: 100%;
+  margin: 0;
+  }
+.potofolio .one img {
+  width: 100%;
+  margin: 10px 0;
+  }
+.potofolio .two {
+  width: 100%;
+  margin: 0;
+  }
+  .potofolio .two img {
+  width: 100%;
+  margin: 10px 0;
+  }
+.potofolio .three {
+  width: 100%;
+  margin: 0;
+  }
+.potofolio .three img {
+  width: 100%;
+  margin: 10px 0;
+  }
+}
